@@ -1,0 +1,1 @@
+link data: https://www.kaggle.com/code/docxian/stroke-prediction

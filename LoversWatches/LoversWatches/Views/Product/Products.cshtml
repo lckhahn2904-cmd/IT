@@ -1,0 +1,28 @@
+﻿@model IEnumerable<LoversWatches.Models.Product>
+<h2 class="text-center">Products</h2>
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-3">
+                <div class="panel panel-info">
+                    <!--<div class="panel-heading text-uppercase"><a href="Detail">@item.ProName</a></div>-->
+                    <div class="panel-heading text-uppercase">
+                        @Html.ActionLink(@item.ProName, "Details", new { id = item.ProId })
+                    </div>
+                    <div class="panel-body">
+                        <a href="@Url.Action("Details", new {id = item.ProId})">
+                            <img src="~/images/@item.ProImage" class="img-responsive" style="width:100%" alt="Image"
+                        </a>
+                    </div>
+                    <div class="panel-footer">
+                        <h4 style="color:darkblue"><strong>@item.Category.CatName</strong></h4>
+                        <p>$@item.ProPrice</p>
+                        <p>@Html.ActionLink("add to Cart", "OrderNow", "Shoppingcart", new { Id = item.ProId }, null)</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

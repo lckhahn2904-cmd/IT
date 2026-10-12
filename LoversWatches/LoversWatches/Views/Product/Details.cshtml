@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LoversWatchesLayout.cshtml";
+}
+
+<h2 class="text-center">Product Details</h2>
+<div class="container" style="width:75%">
+    <div class="row">
+        <div class="col-sm-4">
+            <img src="~/images/@Model.ProImage" class="img-thumbnail" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-8">
+            <h4 class="text-uppercase">@Model.ProName</h4>
+            <h4 style="color:darkblue"><strong>@Model.Category.CatName</strong></h4>
+            $@Model.ProPrice
+            <p>@Html.ActionLink("Back to Products", "Index", new { categoryId = @Model.CatId })</p>
+            <p>@Html.ActionLink("add to Cart", "OrderNow", "Shoppingcart", new { Id = @Model.ProId }, null)</p>
+        </div>
+    </div>
+</div>
+
+

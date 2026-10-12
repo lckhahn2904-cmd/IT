@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LoversWatchesLayout.cshtml";
+}
+<div class="account-in">
+    <div class="container">
+        <main role="main">
+
+            <div class="container mt-4">
+                <form class="needs-validation" name="frmthanhtoan" method="post"
+                      action="#">
+                    <input type="hidden" name="kh_tendangnhap" value="dnpcuong">
+
+                    <blockquote align="center"> <h3 style="color:darkgray">Bạn đã hoàn thành việc đặt đơn hàng </h3></blockquote>
+
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit" name="btnDatHang"><a href="@Url.Action("Index","Home")">Hoàn Thành</a></button>
+            </div>
+    </div>
+    </form>
+</div>
+<!-- End block content -->
+    </main>
+<!-- footer -->
+   </div>

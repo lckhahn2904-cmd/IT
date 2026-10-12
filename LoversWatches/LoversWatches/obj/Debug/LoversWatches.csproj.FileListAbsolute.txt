@@ -1,0 +1,4 @@
+D:\Tài Liệu\LoversWatches\LoversWatches\LoversWatches\obj\Debug\LoversWatches.csproj.AssemblyReference.cache
+D:\Tài Liệu\LoversWatches\LoversWatches\LoversWatches\obj\Debug\LoversWatches.csproj.CoreCompileInputs.cache
+D:\Tài Liệu\LoversWatches\LoversWatches\LoversWatches\obj\Debug\LoversWatches.dll
+D:\Tài Liệu\LoversWatches\LoversWatches\LoversWatches\obj\Debug\LoversWatches.pdb

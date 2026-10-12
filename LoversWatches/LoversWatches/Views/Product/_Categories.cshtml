@@ -1,0 +1,16 @@
+﻿@using LoversWatches.Models
+@{
+    LoversWatches1_DBEntities db = new LoversWatches1_DBEntities();
+    List<Category> Listcategories = db.Categories.ToList();
+}
+<div style="font-family:Arial">
+    <h2>_Categories</h2>
+    <ul>
+        @foreach (var item in Listcategories)
+        {
+            <li>@Html.ActionLink(item.CatName, "Index", "product", new { categoryId = item.Id }, null)</li>
+        }
+    </ul>
+
+</div>
+

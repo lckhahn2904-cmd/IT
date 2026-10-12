@@ -1,0 +1,6 @@
+{
+  "data": [
+    [25, 80, 3.2, 1005, 0.0]
+  ],
+  "features": ["Nhiet_do", "Do_am", "Toc_do_gio", "Ap_suat", "Luong_mua"]
+}

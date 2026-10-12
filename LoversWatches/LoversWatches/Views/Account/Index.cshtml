@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LoversWatchesLayout.cshtml";
+}
+<div class="account-in">
+    <div class="container">
+        <h3>Account</h3>
+        <div class="col-md-7 account-top">
+            @using (Html.BeginForm("Index","Account", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+            }
+            <form>
+                <div>
+                    <span>Email*</span>
+          
+                    @Html.TextBox("Acc")
+                </div>
+                <div>
+                    <span class="pass">Password*</span>
+                    
+                    @Html.Password("Pass")
+                </div>
+                <a href="@Url.Action("Index","Home")" class="create">Logn in</a>
+                <a href="@Url.Action("Index","SignUp")" class="create">Sign up</a>
+            </form>
+        </div>
+        <div class="col-md-5 left-account ">
+            <h4><a href="#">Breguet Marine Chronographe</a></h4>
+            <a href="Product Introduction.html"><img class="img-responsive " src="~/images/9.jpg" alt="" /></a>
+            <div class="five-in">
+                <h1>35% </h1><span>discount</span>
+            </div>
+
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d125415.32214692894!2d106.6467328!3d10.
+	7937792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1691916131168!5m2!1svi!2s"></iframe>
+</div>

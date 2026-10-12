@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c7e21aa2e20947949220e8e6442797d3" Name="Diagram1" ZoomLevel="81">
+        <EntityTypeShape EntityType="LoversWatches_DBModel.Bill" Width="1.5" PointX="9.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoversWatches_DBModel.BoxCart" Width="1.5" PointX="7.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoversWatches_DBModel.Brand" Width="1.5" PointX="7.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoversWatches_DBModel.Complete" Width="1.5" PointX="11.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoversWatches_DBModel.Contact" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoversWatches_DBModel.home" Width="1.5" PointX="2.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoversWatches_DBModel.InstructionsOrder" Width="1.5" PointX="5" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoversWatches_DBModel.Introduce" Width="1.5" PointX="2.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoversWatches_DBModel.login" Width="1.5" PointX="0.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoversWatches_DBModel.ProductIntroduction" Width="1.5" PointX="5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoversWatches_DBModel.Sign_Up" Width="1.5" PointX="0.5" PointY="6.625" IsExpanded="true" />
+        <AssociationConnector Association="LoversWatches_DBModel.FK__Bill__box_cart_i__1DE57479" ManuallyRouted="false" />
+        <AssociationConnector Association="LoversWatches_DBModel.FK__Complete__bill_i__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="LoversWatches_DBModel.FK__BoxCart__product__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="LoversWatches_DBModel.FK__home__login_id__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="LoversWatches_DBModel.FK__Introduce__index__239E4DCF" ManuallyRouted="false" />
+        <AssociationConnector Association="LoversWatches_DBModel.FK__ProductIn__home___182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="LoversWatches_DBModel.FK__login__Sign_Up_i__1273C1CD" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

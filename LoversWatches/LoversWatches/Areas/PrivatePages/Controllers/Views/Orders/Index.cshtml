@@ -1,0 +1,121 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>DataTables</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="@Url.Action("Index","NewArticle")">Home</a></li>
+                    <li class="breadcrumb-item active">DataTables</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Danh sách đơn hàng mới đặt</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="example2" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Stt</th>
+                                <th>Mã Đơn Hàng</th>
+                                <th>Tên Khách Hàng</th>
+                                <th>Ngày Giao</th>
+                                <th>Địa Chỉ </th>
+                                <th>Thành Tiền </th>
+                                <th>Nhóm Lệnh</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>LW0331</td>
+                                <td>Nguyễn Phương Lan </td>
+                                <td> 12/12/2023</td>
+                                <td>An Phú Đông, Q12, Tp.HCM</td>
+                                <td>6600$</td>
+                                <td>
+                                    <button class="btn btn-danger">Hủy đơn</button>
+                                    <button class="btn btn-default ">Chi tiết</button>
+                                    <button class="btn btn-success ">Kích hoạt</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>02</td>
+                                <td>LW0332</td>
+                                <td>Lê Thị Tuyết Mai </td>
+                                <td> 15/12/2023</td>
+                                <td>LaGi, Tỉnh Bình Thuận</td>
+                                <td>66192$</td>
+                                <td>
+                                    <button class="btn btn-danger">Hủy đơn</button>
+                                    <button class="btn btn-default ">Chi tiết</button>
+                                    <button class="btn btn-success ">Kích hoạt</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>LW0333</td>
+                                <td>Nguyễn Phan Tuệ Anh </td>
+                                <td> 12/12/2023</td>
+                                <td>LaGi, Tỉnh Bình Thuận</td>
+                                <td>5682$</td>
+                                <td>
+                                    <button class="btn btn-danger">Hủy đơn</button>
+                                    <button class="btn btn-default ">Chi tiết</button>
+                                    <button class="btn btn-success ">Kích hoạt</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>LW0334</td>
+                                <td>Lưu Nguyễn Yến Trúc </td>
+                                <td> 15/12/2023</td>
+                                <td> Hồng Ngự, Tỉnh Đồng Tháp</td>
+                                <td>87192$</td>
+                                <td>
+                                    <button class="btn btn-danger">Hủy đơn</button>
+                                    <button class="btn btn-default ">Chi tiết</button>
+                                    <button class="btn btn-success ">Kích hoạt</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>LW0335</td>
+                                <td>Nguyễn Thị Mỹ Duy </td>
+                                <td> 20/12/2023</td>
+                                <td>Phú Tân, Tỉnh An Giang</td>
+                                <td>32192$</td>
+                                <td>
+                                    <button class="btn btn-danger">Hủy đơn</button>
+                                    <button class="btn btn-default ">Chi tiết</button>
+                                    <button class="btn btn-success ">Kích hoạt</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+    </div>
+    </section>
